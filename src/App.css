@@ -1,0 +1,111 @@
+html,
+body{
+    font-family: monospace!important;
+    text-align: center;
+}
+button{
+    background:transparent;
+}
+:root{
+    --color1: #00ADB5;
+    --color2: rgb(247, 177, 46);
+    --boxShadow: 0.5px 2px 7px 0px #e8dddd;
+}
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease-out;
+}
+
+a:hover {
+    color: var(--color1)
+}
+
+html::-webkit-scrollbar{
+    display:none;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    font-size: clamp(0.8rem, 0.5rem + 2.5vw, 3rem);
+}
+
+.scroll-container{
+    scroll-snap-type: y mandatory;
+    height: calc(100vh - 1.5em);
+    overflow: auto;
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+}
+.primary-color{
+    color: var(--color1);
+}
+.sub-color{
+    color: var(--color2);
+}
+.scroll-child {
+    padding-top: 3rem;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.display_row{
+    display: flex;
+}
+
+.display_col{
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full_w{
+    width: 100%;
+}
+
+.gap1{
+    gap: 1rem;
+}
+.gap2{
+    gap: clamp(1rem, 10vw, 3rem);
+}
+/* animations */
+.reveal{
+    position: relative;
+    transition: 2s all ease;
+    opacity: 0;
+}
+.reveal.active{
+    opacity: 1;
+    /* animation: flyIn 1s ease 1; */
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.gap1{
+    gap: 1rem;
+}
+
+@keyframes flyIn {
+    from {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
