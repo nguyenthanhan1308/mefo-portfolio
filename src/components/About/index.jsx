@@ -15,6 +15,9 @@ export default function About () {
                 <a href="https://www.linkedin.com/in/sunthanhan1308/" target="_blank" rel="noreferrer">
                     <img src="linkedin.png" alt="linkedinLogo" />
                 </a>
+                <a href="mailto:sunthanhan1308@gmail.com" rel="noreferrer">
+                    <img src="gmail.png" alt="gmailLogo" />
+                </a>
             </div>
         </div>
     )

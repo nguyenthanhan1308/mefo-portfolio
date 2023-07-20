@@ -57,6 +57,10 @@ body {
     scroll-snap-stop: always;
 }
 
+.last-child{
+    height: calc(100vh - 8rem)!important;
+}
+
 .display_row{
     display: flex;
 }

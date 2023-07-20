@@ -23,14 +23,14 @@
 }
 @container (max-width: 768px) {
     .nav-container{
-        padding-top: 2rem;
+        padding-top: 1rem;
         flex-direction: column;
         top: 0;
         right: 0;
         background-color: white;
         height: 100vh;
         box-shadow: var(--boxShadow);
-        transition: width 1s ease;
+        /* transition: width 1s ease; */
         float: right;
         margin-right: clamp(-2rem, -5vw, -2.2rem);
     }
@@ -45,7 +45,7 @@
         display:none;
     }
     .nav-open{
-        width: 30vw;
+        width: 50vw;
     }
     .nav-button{
         display: inline;
@@ -55,6 +55,7 @@
     }
     .header-nav{
         justify-content: start;
+        align-items: flex-end;
     }
 }
 

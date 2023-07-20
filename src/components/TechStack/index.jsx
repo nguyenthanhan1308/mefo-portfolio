@@ -4,7 +4,7 @@ export default function Tech () {
     return (
         <div className="display_col center gap2">
             <h2 className="primary-color">SKILLS | TECH STACKS</h2>
-            <div className="display_row center gap2 wrap">
+            <div id="skills" className="display_row center gap2 wrap">
                 <div className="tech-stack display_row center">
                     <div className="tech-logo center">
                         <img src="js.png" alt="javascriptLogo"/>
@@ -19,9 +19,15 @@ export default function Tech () {
                 </div>
                 <div className="tech-stack display_row center">
                     <div className="tech-logo center">
-                        <img src="nextjs.png" alt="reactLogo"/>
+                        <img src="nextjs.png" alt="nextjs"/>
                     </div>
                     <p className="tech-name">NextJs</p>
+                </div>
+                <div className="tech-stack display_row center">
+                    <div className="tech-logo center">
+                        <img src="mongodb.png" alt="mongodbLogo"/>
+                    </div>
+                    <p className="tech-name">MongoDB</p>
                 </div>
             </div>
         </div>

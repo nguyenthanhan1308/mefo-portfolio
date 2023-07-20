@@ -23,7 +23,7 @@ export default function App() {
 				<div id="tech" className="scroll-child">
 					<Tech />
 				</div>
-				<div className="scroll-child">
+				<div className="scroll-child last-child">
 					<Project />
 				</div>
 			</div>

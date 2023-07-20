@@ -16,9 +16,9 @@ export default function Header() {
                     </button>
                     <div className={`gap2 nav-container ${isOpenNav ? "nav-open" : "nav-close"}`}>
                         <a className="nav-link" href="#about">About</a>
-                        <a className="nav-link" href="contact">Contact</a>
-                        <a className="nav-link" href="cv">CV</a>
                         <a className="nav-link" href="#projects">Projects</a>
+                        <a className="nav-link" href="#skills">Skills</a>
+                        <a className="nav-link" target="_blank" href="resume.pdf">Resume</a>
                     </div>
                 </div>
             </div>
