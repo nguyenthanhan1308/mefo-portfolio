@@ -24,6 +24,8 @@
 @container (max-width: 768px) {
     .nav-container{
         padding-top: 1rem;
+        display: none;
+        gap: 0;
         flex-direction: column;
         top: 0;
         right: 0;
